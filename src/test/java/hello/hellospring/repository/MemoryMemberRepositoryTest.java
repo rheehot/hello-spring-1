@@ -12,6 +12,7 @@ public class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
+    // 메소드마다 테스트 끝나면 메모리 초기화
     @AfterEach
     public void afterEach() {
         repository.clearStore();

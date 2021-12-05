@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class JdbcMemberRepository implements MemberRepository {
+    // DataSource는 데이터베이스 커넥션을 획득할 때 사용하는 객체
     private final DataSource dataSource;
 
     public JdbcMemberRepository(DataSource dataSource) {
